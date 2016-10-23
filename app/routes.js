@@ -29,5 +29,14 @@ module.exports = function(app) {
     app.get('*', function(req, res) {
         res.sendfile('./public/index.html');
     });
+    app.get('/home', function(req, res) {
+        res.sendfile('./public/views/home.html');
+    });
+    app.get('/nerds', function(req, res) {
+        res.sendfile('./public/views/nerds.html');
+    });
+    app.get('/geeks', function(req, res) {
+        res.sendfile('./public/views/geeks.html');
+    });
 
 };
