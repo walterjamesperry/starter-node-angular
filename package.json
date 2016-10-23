@@ -12,6 +12,7 @@
     "mongoose": "~3.8.0"
   },
   "scripts": {
+    "preinstall": "bower install && npm install",
     "start": "node server.js"
   },
   "description": "This is a repo for a starter appliation for a Single Page MEAN Stack application. Just download and install and you have a good foundation for building application.",
@@ -25,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/walterjamesperry/starter-node-angular/issues"
   },
-  "homepage": "https://github.com/walterjamesperry/starter-node-angular#readme"
+  "homepage": "https://github.com/walterjamesperry/starter-node-angular#readme","engines": {
+  "node": "6.2.0"
+}
+
 }
