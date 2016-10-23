@@ -2,10 +2,28 @@
   "name": "starter-node-angular",
   "main": "server.js",
   "dependencies": {
-    "express" : "~4.5.1",
-	"mongoose" : "~3.8.0",
-	"body-parser" : "~1.4.2",
-	"method-override" : "~2.0.2"
-  }
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "body-parser": "~1.4.2",
+    "bootstrap": "^3.3.7",
+    "bower": "^1.7.9",
+    "express": "~4.5.1",
+    "method-override": "~2.0.2",
+    "mongoose": "~3.8.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "description": "This is a repo for a starter appliation for a Single Page MEAN Stack application. Just download and install and you have a good foundation for building application.",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walterjamesperry/starter-node-angular.git"
+  },
+  "author": "Walter Perry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walterjamesperry/starter-node-angular/issues"
+  },
+  "homepage": "https://github.com/walterjamesperry/starter-node-angular#readme"
 }
-

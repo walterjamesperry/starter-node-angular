@@ -1,45 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<base href="/">
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome Citizen</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="Walter Perry" content="">
+        <!-- Le styles -->
+        <link href="libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+              body {
+                padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+              }
+            </style>
+        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+              <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6/html5shiv.min.js"></script>
+            <![endif]-->
+        <!-- Fav and touch icons -->
+        <!--<link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
+        <link rel="shortcut icon" href="bootstrap/ico/favicon.png">-->
 
-	<title>Starter Node and Angular</title>
+        <script type="text/javascript" src="ScriptLibrary/jquery-latest.pack.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
 
-	<!-- CSS -->
-	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css"> <!-- custom styles -->
+        <base href="/">
 
-	<!-- JS -->
-	<script src="libs/angular/angular.min.js"></script>
-	<script src="libs/angular-route/angular-route.min.js"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- custom styles -->
 
-	<!-- ANGULAR CUSTOM -->
-	<script src="js/controllers/MainCtrl.js"></script>
-	<script src="js/controllers/NerdCtrl.js"></script>
-	<script src="js/services/NerdService.js"></script>
-	<script src="js/controllers/GeekCtrl.js"></script>
-	<script src="js/services/GeekService.js"></script>
-	<script src="js/appRoutes.js"></script>
-	<script src="js/app.js"></script>
-</head>
-<body ng-app="sampleApp" ng-controller="NerdController">
-<div class="container">
-	
-	<!-- HEADER -->
-	<nav class="navbar navbar-inverse">
-		<div class="navbar-header">
-			<a class="navbar-brand" href="/">Stencil: Node and Angular</a>
-		</div>
-		<ul class="nav navbar-nav">
-			<li><a href="/nerds">Nerds</a></li>
-			<li><a href="/geeks">Geeks</a></li>
-		</ul>
-	</nav>
+        <!-- JS -->
+        <script src="libs/angular/angular.min.js"></script>
+        <script src="libs/angular-route/angular-route.min.js"></script>
 
-	<!-- ANGULAR DYNAMIC CONTENT -->
-	<div ng-view></div>
+        <!-- ANGULAR CUSTOM -->
+        <script src="js/controllers/MainCtrl.js"></script>
+        <script src="js/controllers/NerdCtrl.js"></script>
+        <script src="js/services/NerdService.js"></script>
+        <script src="js/controllers/GeekCtrl.js"></script>
+        <script src="js/services/GeekService.js"></script>
+        <script src="js/appRoutes.js"></script>
+        <script src="js/app.js"></script>
+    </head>
+    <body ng-app="sampleApp" ng-controller="NerdController">
+        <div class="container">
 
-</div>
-</body>
+            <!-- NAVBAR HEADER -->
+            <nav class="navbar navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/">Welcone Citizen</a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <div style="padding 10px">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <a href="#">Immigration Help Austion</a>
+                                </li>
+                                <li>
+                                    <a href="/nerds">Resettle</a>
+                                </li>
+                                <li>
+                                    <a href="/geeks">Rebuild</a>
+                                </li>
+                                <li>
+                                    <a href="/geeks">Reunite</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <p>
+                &nbsp;
+            </p>
+            <p>
+                &nbsp;
+            </p>
+            <!-- ANGULAR DYNAMIC CONTENT -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div ng-view></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
